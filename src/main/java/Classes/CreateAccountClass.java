@@ -39,7 +39,9 @@ public class CreateAccountClass extends AccountClass {
         System.out.println("Depositor Name :" + RetrivingOldData.get("Depositor Name :"));
         System.out.println("Account Number : " +RetrivingOldData.get("Account Number : "));
         System.out.println("Account Balance : " + RetrivingOldData.get("Account Balance : "));
-        System.out.println("Account Type : " + RetrivingOldData.get("Account Type : "));
+        System.out.println("Account Type :" + RetrivingOldData.get("Account Type :"));
+        System.out.println("Account Card :" + RetrivingOldData.get("Account Card :"));
+        System.out.println("Card Pin :" + RetrivingOldData.get("Account Pin :"));
 
 
     }
@@ -47,7 +49,10 @@ public class CreateAccountClass extends AccountClass {
     String display_balance() {
         HashMap<String, String> RetrivingOldData
                 = UserDatabase.get(Acc_num);
-            return RetrivingOldData.get("Account Balance : ");
+        String balance = RetrivingOldData.get("Account Balance : ");
+        if(balance.equals("0"))
+            return balance;
+        return balance;
     }
 
     void deposit(int acc_num, int money) throws Exception {
