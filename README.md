@@ -9,8 +9,8 @@ Banking Management Application is a project application coded in Java programmin
 - Deposit/ Transfer Money from one account to another
 - View Previous Transactions
 - Change Password of login
-- View active Debit and Credit cards
-- Cancel the Debit cards and credit card 
+- View Active cards
+- Reissue New Card 
  
 #### Few more advanced features can be made available:
 ##### Exception Handling: 
